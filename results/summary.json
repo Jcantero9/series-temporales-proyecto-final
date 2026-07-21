@@ -1,0 +1,41 @@
+{
+  "dataset_handle": "anshtanwar/metro-interstate-traffic-volume",
+  "target_file": "Metro_Interstate_Traffic_Volume.csv",
+  "daily_observations": 2190,
+  "date_start": "2012-10-02",
+  "date_end": "2018-09-30",
+  "train_start": "2012-10-02",
+  "train_end": "2018-08-16",
+  "train_days": 2145,
+  "test_start": "2018-08-17",
+  "test_end": "2018-09-30",
+  "test_days": 45,
+  "rf_best_window": "todo_historico",
+  "rf_best_lags": "28_dias",
+  "ets_best_config": "ETS_NA",
+  "metrics": [
+    {
+      "modelo": "ETS semanal",
+      "categoria": "Estadistico",
+      "mae": 115.036871938303,
+      "rmse": 200.28592180416905,
+      "mape": 3.792499019269973
+    },
+    {
+      "modelo": "Random Forest",
+      "categoria": "Machine Learning",
+      "mae": 116.0253210928288,
+      "rmse": 206.82554818849215,
+      "mape": 3.8863072347001753
+    },
+    {
+      "modelo": "LSTM",
+      "categoria": "Deep Learning",
+      "mae": 450.2443621944103,
+      "rmse": 487.55196577383936,
+      "mape": 14.036915213723672
+    }
+  ],
+  "winner_by_mae": "ETS semanal",
+  "deep_learning_model": "LSTM"
+}
